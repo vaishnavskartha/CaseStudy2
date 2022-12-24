@@ -1,12 +1,12 @@
 // Task1: initiate app and run server at 3000
-var Express=require("express");
+var express=require("express");
 var Bodyparser=require("body-parser");
 var Mongoose=require("mongoose");
 var Cors=require("cors");
 
 const { EmployeeModel } = require("./model/employee");
 
-var app= new Express();
+var app= new express();
 
 app.use(Bodyparser.json());
 app.use(Bodyparser.urlencoded({extended:false}));
